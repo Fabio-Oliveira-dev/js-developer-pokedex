@@ -1,130 +1,47 @@
-* {
-    margin: 0;
-    padding: 0;
+.pegarPokemon{
+    width: 260px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #98d5d7;
+}
+
+.login{
+    color: #a040a0;
+    text-align: center;
+}
+
+h3{
+    text-transform: capitalize;
+}
+
+.case_input_background_mode{
+    width: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2px;
+    background-color: #4d4d4d;
+    border-radius: 5px;
+    padding: 5px 10px;
     box-sizing: border-box;
 }
 
-body {
-    background-color: #519;
-    padding: 0 20px;
-}
-
-::selection {
-    color: #fff;
-    background: #664aff;
-}
-
-.pegarPokemon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 10vh;
-    max-width: 450px;
-    margin: 150px auto;
-    background: #fff;
-    border-radius: 5px;
-}
-
-.pegarPokemon h2{
-    color: darkgrey;
-}
-
-.pegarPokemon .search{
-    background: #fff;
-    width: 100%;
-    border-radius: 5px;
-    position: relative;
-    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
-}
-
-.search input {
-    height: 55px;
-    width: 100%;
+.case_input_background_mode input{
+    background-color: none;
     outline: none;
     border: none;
-    border-radius: 5px;
-    padding: 0 60px 0 20px;
-    font-size: 18px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.search .active input{
-    border-radius: 5px 5px 0 0;
+#pokemon-details{
+    margin: 35px 0px 0px 0px;
+    line-height: 5px;
+    text-align: left;
+    color: #000000;
 }
-
-.search .list{
-    padding: 0;
-    opacity: 0;
-    pointer-events: none;
-    max-width: 280px;
-    overflow-y: auto;
-}
-
-.search .active .list{
-    padding: 10px 8px;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.list li{
-    list-style: none;
-    padding: 8px 12px;
-    display: none;
-    width: 100px;
-    cursor: default;
-    border-radius: 3px;
-}
-
-.search .active .list li{
-    display: block;
-}
-
-.list li:hover{
-    background: #efefef;
-}
-
-.search .icon{
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 55px;
-    text-align: center;
-    line-height: 55px;
-    font-size: 20px;
-    color: #644bff;
-    cursor: pointer;
-}
-
-.pokemon-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .pokemon {
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .pokemon .number {
-    margin-right: 8px;
-  }
-  
-  .pokemon .name {
-    flex-grow: 1;
-    margin-right: 8px;
-  }
-  
-  .pokemon img {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-  }
-  
 
 .normal {
     background-color: #a6a877;

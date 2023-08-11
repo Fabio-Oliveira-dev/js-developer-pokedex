@@ -5,9 +5,12 @@ const pokemonDetailsDiv = document.getElementById("pokemon-details");
       function showPokemonDetails(pokemon) {
         const html = `
           <h2>${pokemon.name}</h2>
-          <p>Tipo ${pokemon.types.map(type => type.type.name).join(' ')}</p>
-          <p>Na lista ${pokemon.id}</p>
-          <p>Competição ${pokemon.flavor_text}</p>
+          <p>Tipo: ${pokemon.types.map(type => type.type.name).join(' ')}</p>
+          <p>Posição Na Lista: ${pokemon.id}ª</p>
+          <p>Experiência: ${pokemon.base_experience}</p>
+          <p>Habilidades: ${pokemon.abilities.map(abilities => abilities.ability.name).join(' ')}</p>
+          <p>Peso: ${pokemon.weight} Kilogramas</p>
+          <p>Altura: ${pokemon.height} Centimetros</p>
           <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
         `;
         pokemonDetailsDiv.innerHTML = html;
